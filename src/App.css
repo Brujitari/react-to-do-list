@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +40,31 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%
+}
+
+.toDo {
+  min-height: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: left;
+  min-width: 250px;
+}
+
+.task {
+  display: flex;
+  align-self: end;
+  margin-top: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.842);
+  background-image: linear-gradient(to right, rgba(53, 74, 144, 0.371), rgba(211, 62, 191, 0.349));
+  padding: 10px;
+  border-radius: 2px;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E") 1;
 }
